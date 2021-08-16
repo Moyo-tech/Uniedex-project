@@ -1,0 +1,529 @@
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Open Sans', sans-serif;
+                box-sizing: border-box;
+            }
+            
+            .header {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("https://media.discordapp.net/attachments/875702549972414475/875990195399434321/study.jpg?width=624&height=468");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100vh;
+                position: relative;
+            }
+            
+            #ist {
+                text-align: center;
+                padding-top: 250px;
+                font-size: 70px;
+                color: white;
+                font-weight: bold;
+            }
+            /* Navigation bar and header home  */
+            
+            nav {
+                background: white;
+                height: 80px;
+                width: 100%;
+            }
+            
+            label.logo {
+                color: #00008B;
+                font-size: 35px;
+                line-height: 80px;
+                padding: 0 100px;
+                font-weight: bold;
+            }
+            
+            nav ul {
+                float: right;
+                margin-right: 20px;
+            }
+            
+            nav ul li {
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+            }
+            
+            nav ul li a {
+                color: #00008B;
+                font-size: 17px;
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+            
+            nav ul li a::after {
+                content: '';
+                width: 0%;
+                height: 2px;
+                background: #51be78;
+                display: block;
+                margin-top: -30px;
+                transition: 0.5s;
+            }
+            
+            nav ul li a:hover::after {
+                width: 100%;
+            }
+            
+            .checkbtn {
+                font-size: 30px;
+                color: #00008B;
+                float: right;
+                line-height: 80px;
+                margin-right: 40px;
+                cursor: pointer;
+                display: none;
+            }
+            
+            #check {
+                display: none;
+            }
+            /* Who are we  */
+            
+            .heading {
+                text-align: center;
+                padding-top: 40px;
+                font-size: 40px;
+                font-weight: bold;
+                color: #51be78;
+            }
+            
+            .para {
+                text-align: justify;
+                margin-top: 20px;
+                margin-left: 120px;
+                margin-right: 120px;
+                font-size: 18px;
+                color: #001e34;
+                padding-bottom: 70px;
+                font-weight: 100;
+            }
+            
+            .fixed-bg {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("https://media.istockphoto.com/photos/baseball-player-picture-id143920409?k=6&m=143920409&s=612x612&w=0&h=CV5-Q1V7LtniaFe6okT-JpqNTifnhRt9yIyjbGH8UwU=");
+                min-height: 500px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            h2 {
+                text-align: center;
+                padding: 0px;
+                font-size: 40px;
+                color: white;
+                font-weight: bold;
+            }
+            
+            h3 {
+                padding-top: 100px;
+                margin-left: 30px;
+                margin-right: 250px;
+                font-size: 50px;
+                color: white;
+                font-weight: bold;
+            }
+            
+            h4 {
+                padding-top: 100px;
+                margin-left: 30px;
+                margin-right: 250px;
+                font-size: 50px;
+                color: white;
+                font-weight: bold;
+            }
+            /* Mobile Phone */
+            
+            @media (max-width: 952px) {
+                label.logo {
+                    font-size: 30px;
+                    padding-left: 50px;
+                }
+                nav ul li a {
+                    font-size: 16px;
+                }
+            }
+            
+            @media (max-width: 858px) {
+                .checkbtn {
+                    display: block;
+                }
+                ul {
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    background: white;
+                    top: 80px;
+                    left: -100%;
+                    text-align: center;
+                    transition: all .5s;
+                }
+                nav ul li {
+                    display: block;
+                    margin: 50px 0;
+                    line-height: 30px;
+                }
+                nav ul li a {
+                    font-size: 20px;
+                }
+                a:hover,
+                a.active {
+                    background: none;
+                    color: #51be78;
+                }
+                #check:checked~ul {
+                    left: 10;
+                }
+            }
+            
+            .hero-btn {
+                display: inline-block;
+                text-decoration: none;
+                color: #fff;
+                border: 1px solid#fff;
+                padding: 12px 34px;
+                font-size: 14px;
+                background: transparent;
+                position: relative;
+                cursor: pointer;
+                right: -45%;
+            }
+            
+            .hero-btn:hover {
+                border: 1px solid #51be78;
+                background: #51be78;
+                transition: 1s;
+            }
+            
+            .sub-header {
+                height: 80vh;
+                width: 100%;
+                background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("https://media.istockphoto.com/photos/yale-university-graduation-ceremonies-picture-id474306176?k=6&m=474306176&s=612x612&w=0&h=Dr8jHbZ-LlvR-mHIyBs7u1y-8ma-_kqxwTBRZdWGzsE=");
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+                color: white;
+            }
+            
+            .sub-header h1 {
+                margin-top: 50px;
+                padding-top: 150px;
+                font-size: 50px;
+            }
+            /* What we Offer  */
+            
+            .discounts {
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                padding-top: 60px;
+            }
+            
+            .offer {
+                text-align: center;
+                padding: 0px;
+                font-size: 40px;
+                color: #001e34;
+                font-weight: bold;
+            }
+            
+            .co {
+                color: #001e34;
+                font-size: 14px;
+                font-weight: 100;
+                line-height: 22px;
+                padding: 10p
+            }
+            
+            .ok {
+                color: #777;
+                font-size: 14px;
+                font-weight: 100;
+                line-height: 22px;
+                padding: 10px;
+            }
+            
+            .ro {
+                margin-top: 5%;
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .flavour-col {
+                flex-basis: 31%;
+                background: #98FB98;
+                border-radius: 10px;
+                margin-bottom: 5%;
+                margin-right: 2%;
+                padding: 20px 12px;
+                box-sizing: border-box;
+                transition: 0.5s;
+            }
+            
+            .services {
+                text-align: center;
+                padding-top: 2px;
+                font-size: 30px;
+                margin: 10px 0;
+            }
+            
+            .flavour-col:hover {
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+            }
+            
+            .button-1 {
+                display: inline-block;
+                text-decoration: none;
+                color: #001e34;
+                border: 1px solid white;
+                padding: 10px 30px;
+                font-size: 14px;
+                position: relative;
+                background-color: transparent;
+            }
+            /* Contact  */
+            
+            .contact {
+                color: #51be78;
+            }
+            
+            p {
+                text-align: center;
+                font-size: 18px;
+            }
+            
+            .contact-us {
+                width: 80%;
+                margin: auto;
+            }
+            
+            .contact-col {
+                flex-basis: 48%;
+                margin-bottom: 30px;
+            }
+            
+            .contact-col div {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+            }
+            
+            .contact-col div .fa {
+                font-size: 28px;
+                color: #00008B;
+                margin: 10px;
+                margin-right: 30px;
+            }
+            
+            .contact-col div p {
+                padding: 0;
+                font-size: 14px;
+            }
+            
+            .contact-col div h5 {
+                font-size: 16px;
+                margin-bottom: 5px;
+                color: #555;
+                font-weight: 400;
+            }
+            
+            .row {
+                margin-top: 5%;
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .hero-o {
+                display: inline-block;
+                text-decoration: none;
+                color: #00008B;
+                border: 1px solid #00008B;
+                padding: 12px 34px;
+                font-size: 14px;
+                background: transparent;
+                position: relative;
+                cursor: pointer;
+            }
+            
+            .hero-o:hover {
+                border: 1px solid #51be78;
+                background: #51be78;
+                transition: 1s;
+            }
+            
+            .contact-col input,
+            .contact-col textarea {
+                width: 100%;
+                padding: 15px;
+                margin-bottom: 17px;
+                outline: none;
+                border: 1px solid #ccc;
+            }
+            /* Footer */
+            
+            .footer {
+                position: inherit;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: #001e34;
+                color: white;
+                font-size: 20px;
+                padding: 50px;
+            }
+            
+            .left-col {
+                margin-left: 500px;
+            }
+            
+            .footer-social-icons {
+                width: 100%;
+                height: auto;
+                margin: auto;
+                color: #001e34;
+            }
+            
+            .footer-social-icons ul {
+                margin: 0px;
+                padding: 0px;
+                text-align: center;
+            }
+            
+            .footer-social-icons ul li {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                margin: 0px 10px;
+                border-radius: 100%;
+                background: #51be78;
+            }
+            
+            .footer-social-icons ul li a {
+                color: #001e34;
+                font-size: 25px;
+            }
+            
+            .footer-social-icons ul li a i {
+                line-height: 50px;
+            }
+            
+            .footer-social-icons ul li a i:hover {
+                opacity: 0.7;
+                color: #51be78;
+            }
+            /* opportunities page */
+            
+            .head {
+                background-color: #eee;
+                padding: 1rem;
+                top: -20px;
+            }
+            
+            .filter-img {
+                width: 400px;
+                height: 175px;
+                padding-right: 30px;
+                padding-bottom: 15px;
+            }
+            
+            .opp-text {
+                font-size: 14px;
+                color: #001e34;
+            }
+            
+            .filter-tag {
+                color: #51be78;
+                text-align: left;
+                padding-bottom: 20px;
+                margin-right: 10px;
+                font-size: 30px;
+            }
+            
+            form input {
+                width: 20rem;
+                padding: 10px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            
+            .btnn {
+                font-size: 16px;
+                text-decoration: none;
+                color: #001e34;
+                background-color: #C0C0C0;
+                border-radius: 5px;
+                padding: 5px;
+                margin-right: 20px;
+                padding-right: 12px;
+                transition: 0.5s;
+            }
+            
+            .btnn:hover {
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+                background-color: #a8e6cf;
+            }
+            
+            .btn {
+                font-size: 16px;
+                text-decoration: none;
+                color: #001e34;
+                background-color: #C0C0C0;
+                border-radius: 5px;
+                padding: 5px;
+                margin-right: 20px;
+                transition: 0.5s;
+            }
+            
+            .btn:hover {
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+                background-color: #a8e6cf;
+            }
+            
+            .scholar-p {
+                text-align: justify;
+                font-size: 12px;
+            }
+            
+            .opportunities-container {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: -1rem;
+                margin-left: -1rem;
+                padding-left: 100px;
+                padding-right: 100px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            
+            .oppor {
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+                padding-left: 15px;
+                padding-right: 30px;
+            }
+            
+            a {
+                text-decoration: none;
+                color: #51be78;
+            }
+            /* a:hover {
+                border: 1px solid #51be78;
+                background: white;
+                transition: 1s;
+            }  */
+            /* Who are We */
+            /* col. wiki */
+            /* Opportunities */
+            /* Video Lessons */
+            /* contact */
+            /* footer */
