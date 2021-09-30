@@ -1,5 +1,5 @@
 
-UNIEDEX
+#UNIEDEX
 
 Uniedex is a full responsive educational Website programmed for high-school students to help them get into top schools abroad and reach their true potential. The website's services comprise a college wiki page, workshop page, Home page and an opportunities page all designed to help students reach their true potential. 
 
